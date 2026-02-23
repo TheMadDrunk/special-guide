@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Mémoire | Stratégie Produit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        cream: '#FAFAFA',
+                        stone: '#F5F5F0',
+                        charcoal: '#222222',
+                        accent: '#D4A373', // Warm terracotta/sand
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #FAFAFA; color: #222222; }
+        .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 glass-card border-b border-gray-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <i data-lucide="book-open" class="text-charcoal w-6 h-6"></i>
+                    <span class="font-serif font-bold text-xl tracking-tight">Studio Mémoire</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#parameters" class="text-sm font-medium text-gray-600 hover:text-charcoal transition">Les Paramètres</a>
+                    <a href="#products" class="text-sm font-medium text-gray-600 hover:text-charcoal transition">Notre Gamme</a>
+                </div>
+                <div class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6 text-charcoal"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="max-w-2xl">
+                    <span class="text-accent font-medium tracking-wider uppercase text-sm mb-4 block">Blueprint Produit & Tech</span>
+                    <h1 class="font-serif text-5xl lg:text-7xl leading-tight mb-6">
+                        Nous n'imprimons pas de simples photos.<br>
+                        <span class="italic text-gray-500">Nous concevons des histoires.</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 font-light leading-relaxed">
+                        Le marché marocain souffre d'un vide entre l'impression photo basique et l'album de mariage hors de prix. Voici notre plan pour combler ce vide avec des photobooks casuals, chics et scalables.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#products" class="bg-charcoal text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-800 transition shadow-lg">Voir la Gamme</a>
+                        <a href="#parameters" class="border border-gray-300 text-charcoal px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition">Voir les Spécifications</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-accent/10 rounded-3xl transform rotate-3 scale-105 transition-transform duration-500 hover:rotate-6"></div>
+                    <img src="https://i.etsystatic.com/52421186/r/il/350014/6812183317/il_794xN.6812183317_cwkj.jpg" alt="Magazines Esthétiques" class="relative rounded-3xl shadow-2xl object-cover h-[500px] w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parameters Section -->
+    <section id="parameters" class="py-24 bg-stone border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl mb-4">Les Paramètres que Nous Contrôlons</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto font-light">Chaque livre que nous vendons est une combinaison intelligente de ces 6 variables. Cela rend notre production "backend" incroyablement efficace et nos coûts d'impression prévisibles.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Parameter 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-stone rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="maximize" class="text-charcoal"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">1. Le Format</h3>
+                    <ul class="text-sm text-gray-600 space-y-2 font-light">
+                        <li><strong class="font-medium text-gray-900">A5 (14.8 x 21 cm) :</strong> Format poche, économique.</li>
+                        <li><strong class="font-medium text-gray-900">A4 (21 x 29.7 cm) :</strong> La taille classique et esthétique du magazine ou beau livre.</li>
+                    </ul>
+                </div>
+
+                <!-- Parameter 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-stone rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="book" class="text-charcoal"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">2. Type de Couverture</h3>
+                    <ul class="text-sm text-gray-600 space-y-2 font-light">
+                        <li><strong class="font-medium text-gray-900">Souple :</strong> Papier épais 300g. Flexible.</li>
+                        <li><strong class="font-medium text-gray-900">Rigide (Cartonnée) :</strong> Carton indéformable enveloppé de papier imprimé. Très haut de gamme.</li>
+                    </ul>
+                </div>
+
+                <!-- Parameter 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-stone rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="copy" class="text-charcoal"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">3. Volume de Pages</h3>
+                    <ul class="text-sm text-gray-600 space-y-2 font-light">
+                        <li><strong class="font-medium text-gray-900">Limite de Base :</strong> Fixée à 24 ou 30 pages pour protéger nos marges.</li>
+                        <li><strong class="font-medium text-gray-900">Règle :</strong> Conçu en multiples de 4 pour l'imprimeur. Possibilité d'upsell (pages supplémentaires).</li>
+                    </ul>
+                </div>
+
+                <!-- Parameter 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-stone rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="sparkles" class="text-charcoal"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">4. Papier & Pelliculage</h3>
+                    <ul class="text-sm text-gray-600 space-y-2 font-light">
+                        <li><strong class="font-medium text-gray-900">Intérieur :</strong> 135g ou 170g. Couché Mat (moderne, non brillant).</li>
+                        <li><strong class="font-medium text-gray-900">Couverture :</strong> Pelliculage Mat ou "Soft Touch" pour éviter les rayures.</li>
+                    </ul>
+                </div>
+
+                <!-- Parameter 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-stone rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="layers" class="text-charcoal"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">5. Type de Reliure</h3>
+                    <ul class="text-sm text-gray-600 space-y-2 font-light">
+                        <li><strong class="font-medium text-gray-900">Agrafé (Piqûre) :</strong> Économique, pour les petits livrets A5.</li>
+                        <li><strong class="font-medium text-gray-900">Dos Carré Collé :</strong> Pages collées à une tranche plate. Aspect d'un vrai livre haut de gamme.</li>
+                    </ul>
+                </div>
+
+                <!-- Parameter 6 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-stone rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="pen-tool" class="text-charcoal"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">6. Thème Graphique</h3>
+                    <ul class="text-sm text-gray-600 space-y-2 font-light">
+                        <li><strong class="font-medium text-gray-900">Éditorial :</strong> Minimaliste, beaucoup d'espaces blancs, typographie élégante.</li>
+                        <li><strong class="font-medium text-gray-900">Dynamique :</strong> Collages pleins bords, couleurs vives pour les événements étudiants.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Lineup Section -->
+    <section id="products" class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl mb-4">Notre Gamme de 3 Produits (MVP)</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto font-light">En jouant avec nos 6 paramètres, nous proposons exactement ces trois produits. Le fichier PDF final généré pour l'impression est quasiment identique pour les trois.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-10">
+                
+                <!-- Product 1: The Zine -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://i.etsystatic.com/52470886/r/il/1ebf64/7360137337/il_794xN.7360137337_1azq.jpg" alt="Le Zine" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">Entrée de Gamme</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-2xl mb-2">Le Zine</h3>
+                        <p class="text-gray-500 text-sm mb-6 italic">Le Livret Agrafé</p>
+                        
+                        <div class="space-y-4 mb-8 border-t border-b border-gray-100 py-4">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-500">Format</span>
+                                <span class="font-medium">A5 (Format Poche)</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-500">Couverture & Reliure</span>
+                                <span class="font-medium">Souple • Agrafé</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-500">Pages & Papier</span>
+                                <span class="font-medium">24 Pgs • 135g Mat</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Particularités Graphiques</h4>
+                            <p class="text-sm text-gray-700 font-light">Espace restreint. Photos bord à bord (pleine page) avec un minimum de texte. Vibe fanzine indépendant / carnet de voyage.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Meilleurs Cas d'Usage</h4>
+                            <ul class="text-sm text-gray-700 font-light list-disc pl-4">
+                                <li>Ventes BDE (Événements étudiants massifs)</li>
+                                <li>Courts week-ends (ex. Taghazout)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: The Standard -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border-2 border-charcoal relative transform md:-translate-y-4 group">
+                    <div class="absolute top-0 w-full bg-charcoal text-white text-center text-xs font-bold uppercase tracking-widest py-1.5 z-10">Le Produit Phare</div>
+                    <div class="h-64 overflow-hidden mt-6 relative">
+                        <img src="https://i.etsystatic.com/52421186/r/il/350014/6812183317/il_794xN.6812183317_cwkj.jpg" alt="Le Standard" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-2xl mb-2">Le Standard</h3>
+                        <p class="text-gray-500 text-sm mb-6 italic">Le Magazine</p>
+                        
+                        <div class="space-y-4 mb-8 border-t border-b border-gray-100 py-4">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-500">Format</span>
+                                <span class="font-medium">A4 (Livre Classique)</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-500">Couverture & Reliure</span>
+                                <span class="font-medium">Souple 300g • Dos Carré Collé</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-500">Pages & Papier</span>
+                                <span class="font-medium">30 Pgs • 170g Mat</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Particularités Graphiques</h4>
+                            <p class="text-sm text-gray-700 font-light">Mise en page éditoriale. Beaucoup d'espace blanc, bordures épurées, typographie élégante. Style magazine Kinfolk ou Vogue.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Meilleurs Cas d'Usage</h4>
+                            <ul class="text-sm text-gray-700 font-light list-disc pl-4">
+                                <li>Vacances d'été</li>
+                                <li>Anniversaires de couple</li>
+                                <li>Souvenirs de remise de diplômes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: The Premium -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://i.etsystatic.com/54581028/r/il/b4889b/6286872390/il_794xN.6286872390_c1xl.jpg" alt="Le Premium" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute top-4 right-4 bg-accent text-white backdrop-blur px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase shadow">L'Upsell</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-2xl mb-2">Le Premium</h3>
+                        <p class="text-gray-500 text-sm mb-6 italic">Le Beau Livre</p>
+                        
+                        <div class="space-y-4 mb-8 border-t border-b border-gray-100 py-4">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-500">Format</span>
+                                <span class="font-medium">A4 (Beau Livre)</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-500">Couverture & Reliure</span>
+                                <span class="font-medium text-accent">Rigide (Cartonnée)</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-500">Pages & Papier</span>
+                                <span class="font-medium">30 Pgs • 170g Mat</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Particularités Graphiques</h4>
+                            <p class="text-sm text-gray-700 font-light"><strong class="font-semibold">Intérieur :</strong> Exactement le même PDF que le Standard.<br><strong class="font-semibold">Couverture :</strong> Couleur unie ultra-minimaliste avec une seule photo centrée.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Meilleurs Cas d'Usage</h4>
+                            <ul class="text-sm text-gray-700 font-light list-disc pl-4">
+                                <li>Upsell lors du paiement (+150 MAD)</li>
+                                <li>Lunes de miel</li>
+                                <li>Cadeaux VIP pour intervenants (Écoles)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center items-center gap-2 mb-6 opacity-80">
+                <i data-lucide="book-open" class="w-6 h-6"></i>
+                <span class="font-serif font-bold text-xl tracking-tight">Studio Mémoire</span>
+            </div>
+            <p class="text-gray-400 text-sm font-light">Document Interne de Stratégie Produit • Blueprint Tech & Design</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
